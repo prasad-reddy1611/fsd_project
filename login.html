@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Website Login</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-image: url('https://images.unsplash.com/photo-1557838923-2985c318be9d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fGdhbWV8ZW58MHx8fHwxNjY1MjM5NjAz&ixlib=rb-1.2.1&q=80&w=1080');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center min-h-screen bg-black bg-opacity-50">
+    <div class="bg-gray-900 bg-opacity-80 p-8 rounded-lg shadow-lg max-w-md w-full">
+        <h2 class="text-3xl font-extrabold text-center text-gray-100 mb-6">Welcome Back, Gamer!</h2>
+        <form action="/login" method="POST">
+            <div class="mb-4">
+                <label for="email" class="block text-gray-400">Email Address</label>
+                <input type="email" id="email" name="email" required class="w-full px-4 py-2 bg-gray-800 text-gray-200 rounded-lg border border-gray-600 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent">
+            </div>
+            <div class="mb-6">
+                <label for="password" class="block text-gray-400">Password</label>
+                <input type="password" id="password" name="password" required class="w-full px-4 py-2 bg-gray-800 text-gray-200 rounded-lg border border-gray-600 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent">
+            </div>
+            <div class="flex items-center justify-between mb-6">
+                <label class="flex items-center text-gray-400">
+                    <input type="checkbox" class="form-checkbox h-5 w-5 text-purple-500">
+                    <span class="ml-2">Remember Me</span>
+                </label>
+                <a href="#" class="text-purple-400 hover:text-purple-300">Forgot Password?</a>
+            </div>
+            <button type="submit" class="w-full bg-purple-600 hover:bg-purple-700 text-gray-100 font-bold py-2 px-4 rounded-lg focus:outline-none focus:ring-4 focus:ring-purple-500">Login</button>
+        </form>
+        <p class="mt-6 text-center text-gray-400">
+            New to the game? <a href="/Signup.html" class="text-purple-400 hover:text-purple-300">Sign up</a>
+        </p>
+    </div>
+</body>
+</html>

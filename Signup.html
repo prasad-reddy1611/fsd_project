@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Website - Sign Up</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background: url('https://source.unsplash.com/random/1920x1080?gaming') no-repeat center center fixed;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body class="h-screen flex justify-center items-center bg-gray-900 bg-opacity-75">
+    <div class="w-full max-w-md bg-gray-800 bg-opacity-90 p-8 rounded-lg shadow-lg">
+        <h2 class="text-3xl text-center text-white font-bold mb-8">Join the Arena</h2>
+        <form action="/submit-signup.html" method="post">
+            <div class="mb-4">
+                <input type="text" name="username" placeholder="Gamer Name" class="w-full p-3 rounded-lg bg-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-600">
+            </div>
+            <div class="mb-4">
+                <input type="email" name="email" placeholder="Email" class="w-full p-3 rounded-lg bg-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-600">
+            </div>
+            <div class="mb-4">
+                <input type="password" name="password" placeholder="Password" class="w-full p-3 rounded-lg bg-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-600">
+            </div>
+            <div class="mb-4">
+                <input type="password" name="confirm_password" placeholder="Confirm Password" class="w-full p-3 rounded-lg bg-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-600">
+            </div>
+            <div class="mb-6">
+                <button type="submit" class="w-full py-3 bg-purple-600 hover:bg-purple-700 text-white rounded-lg shadow-lg font-semibold transition-all duration-300">
+                    Create Account
+                </button>
+            </div>
+        </form>
+        <div class="text-center">
+            <p class="text-gray-400">Already a member? <a href="/login.html" class="text-purple-400 hover:text-purple-500">Log In</a></p>
+        </div>
+    </div>
+</body>
+</html>
